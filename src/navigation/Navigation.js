@@ -1,11 +1,13 @@
-import React from 'react'
-import { NavigationContainer } from '@react-navigation/native'
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { Icon } from "react-native-elements"
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { Icon } from "react-native-elements";
 
-import HomeScreen from "../screens/HomeScreen/HomeScreen"
-import Account from '../screens/AccountScreen/Account'
-import WeatherScreen from "../screens/WeatherScreen/WeatherScreen"
+import AccountStack from './AccountStack';
+
+import HomeStack from "./HomeStack";
+
+import WeatherStack from "./WeatherStack";
 
 
 const Tab = createBottomTabNavigator()
@@ -15,36 +17,47 @@ export default function Navigation() {
         <NavigationContainer>
             <Tab.Navigator 
                 initialRouteName = "home"
-                screenOptions = {{
-                    inactiveTintColor: "#646464",
-                    activeTintColor: "#00a680"
-                }}
-                screenOptions = {({ route }) => ({
-                    tabBarIcon: ({ color }) => screenOptions(route, color)
+                screenOptions = {
+                    ({ route }) => ({
+                   tabBarIcon: ({ color }) => screenOptions(route, color)
                 })}
             >
                 <Tab.Screen 
                     name = "home" 
-                    component= {HomeScreen} 
-                    options={{title: "Home"}
+                    component= {HomeStack} 
+                    options={{
+                        tabBarLabel: "Home",
+                        headerShown: false,
+                        tabBarInactiveTintColor: "#686868",
+                        tabBarActiveTintColor: "#060a5c"}
                 }/>
                 <Tab.Screen 
                     name = "weather" 
-                    component= {WeatherScreen} 
-                    options={{title: "Weather"}
+                    component= {WeatherStack} 
+                    options={{
+                        tabBarLabel: "Weather",
+                        headerShown: false,
+                        tabBarInactiveTintColor: "#686868",
+                        tabBarActiveTintColor: "#060a5c"
+                    }
                 }/>
                 <Tab.Screen 
                     name = "account" 
-                    component= {Account} 
-                    options={{title: "Account"}
+                    component= {AccountStack} 
+                    options={{
+                        tabBarLabel: "Account",
+                        headerShown: false,
+                        tabBarInactiveTintColor: "#686868",
+                        tabBarActiveTintColor: "#060a5c"
+                    }
                 }/>
             </Tab.Navigator>
         </NavigationContainer>
     )
 }
 
-function screenOptions(route, color) {
-    let iconName
+function screenOptions(route, color){
+    let iconName;
 
     switch (route.name) {
         case "home":
@@ -63,4 +76,5 @@ function screenOptions(route, color) {
     return(
         <Icon type= "material-community" name={iconName} size= {22} color= {color}/>           
     )
-}
+};
+
