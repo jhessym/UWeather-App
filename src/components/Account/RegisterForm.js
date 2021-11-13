@@ -6,6 +6,7 @@ import { validateEmail } from "../../utils/validations";
 import { size, isEmpty } from "lodash";
 import * as firebase from "firebase";
 import {useNavigation} from '@react-navigation/native';
+import { UWheatherTheme } from "../../constants/theme";
 
 export default function RegisterForm(props){
     const { toastRef} = props;
@@ -126,7 +127,7 @@ const styles = StyleSheet.create({
 
     },
     btnRegister:{
-        backgroundColor:'#060a5c',
+        backgroundColor: UWheatherTheme.colors.secondary,
     },
     iconRight:{
         color:'#c1c1c1',
