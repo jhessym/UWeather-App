@@ -1,6 +1,11 @@
 import { StyleSheet } from "react-native"
+import { UWheatherTheme } from "../../constants/theme"
 
 export default StyleSheet.create({
+    backgroundImage: {
+        width: '100%', 
+        height: '100%'
+    },
     mainView: {
         flex: 1,
         alignItems: "center",
@@ -11,7 +16,7 @@ export default StyleSheet.create({
     image: {
         width: 150, 
         height: 150, 
-        tintColor: "blue"
+        resizeMode: 'contain'
     },
     contentView: {
         marginTop: 40
@@ -22,7 +27,7 @@ export default StyleSheet.create({
         paddingBottom: 20
     },
     subtitle: {
-        color: "blue"
+        color: UWheatherTheme.colors.primary
     },
     description: {
         fontSize: 18,

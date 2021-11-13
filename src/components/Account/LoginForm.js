@@ -6,6 +6,7 @@ import {useNavigation} from '@react-navigation/native'
 import * as firebase from "firebase";
 import {validateEmail} from '../../utils/validations';
 import Loading from '../Loading';
+import { UWheatherTheme } from "../../constants/theme";
 
 export default function LoginForm(props) {
     const{ toastRef } = props;
@@ -104,7 +105,7 @@ const styles = StyleSheet.create({
         width:'95%',
     },
     btnLogin:{
-        backgroundColor: '#060a5c',
+        backgroundColor: UWheatherTheme.colors.secondary,
     },
     iconRight:{
         color:'#c1c1c1',

@@ -10,7 +10,7 @@ export default function Register() {
     return(
         <KeyboardAwareScrollView>
            <Image 
-           source={require('../../../assets/images/logo.png')}
+           source={require('../../../assets/images/logo-principal.png')}
            resizeMode='contain'
            style={styles.logo}
            />

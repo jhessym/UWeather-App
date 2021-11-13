@@ -4,6 +4,7 @@ import { Divider } from "react-native-elements";
 import {useNavigation} from '@react-navigation/native';
 import Toast from "react-native-easy-toast";
 import LoginForm from "../../components/Account/LoginForm";
+import { UWheatherTheme } from "../../constants/theme";
 
 
 export default function Login(){
@@ -13,7 +14,7 @@ export default function Login(){
     return(
         <ScrollView>
             <Image
-            source={require('../../../assets/images/logo.png')}
+            source={require('../../../assets/images/logo-principal.png')}
             resizeMode='contain'
             style= {styles.logo}
             />
@@ -58,11 +59,11 @@ const styles=StyleSheet.create({
         marginRight: 10,
     },
     btnRegister:{
-        color: "#060a5c",
+        color: UWheatherTheme.colors.accent,
         fontWeight: 'bold'
     },
     divider:{
-        color: "#060a5c",
+        color: UWheatherTheme.colors.divider,
         margin: 40,
     },
 });
