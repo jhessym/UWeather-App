@@ -2,13 +2,14 @@ import React from "react";
 import {StyleSheet, View, ScrollView, Text, Image} from "react-native";
 import {Button} from 'react-native-elements'; 
 import {useNavigation} from '@react-navigation/native';
+import { UWheatherTheme } from "../../constants/theme";
 
 export default function UserGuest() {
     const navigation= useNavigation();
     return(
        <ScrollView centerContent={true} style={styles.viewBody}>
            <Image
-            source = {require('../../../assets/images/logo.png')}
+            source = {require('../../../assets/images/cloud-sun.png')}
             resizeMode = 'contain'
             style={styles.image}
             />
@@ -55,7 +56,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     btnStyle:{
-        backgroundColor: '#14067d',
+        backgroundColor: UWheatherTheme.colors.secondary,
     },
     btnContainer:{
         width: '70%',

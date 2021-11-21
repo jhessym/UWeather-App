@@ -29,7 +29,7 @@ export default function Navigation() {
                         tabBarLabel: "Home",
                         headerShown: false,
                         tabBarInactiveTintColor: "#686868",
-                        tabBarActiveTintColor: "#060a5c"}
+                        tabBarActiveTintColor: "#219EBC"}
                 }/>
                 <Tab.Screen 
                     name = "weather" 
@@ -38,7 +38,7 @@ export default function Navigation() {
                         tabBarLabel: "Weather",
                         headerShown: false,
                         tabBarInactiveTintColor: "#686868",
-                        tabBarActiveTintColor: "#060a5c"
+                        tabBarActiveTintColor: "#219EBC"
                     }
                 }/>
                 <Tab.Screen 
@@ -48,7 +48,7 @@ export default function Navigation() {
                         tabBarLabel: "Account",
                         headerShown: false,
                         tabBarInactiveTintColor: "#686868",
-                        tabBarActiveTintColor: "#060a5c"
+                        tabBarActiveTintColor: "#219EBC"
                     }
                 }/>
             </Tab.Navigator>
