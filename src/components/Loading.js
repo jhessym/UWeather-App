@@ -1,6 +1,7 @@
 import React from "react";
 import{StyleSheet, View, Text, ActivityIndicator} from 'react-native';
 import {Overlay} from 'react-native-elements';
+import { UWheatherTheme } from "../constants/theme";
 
 export default function Loading(props){
     const{isVisible, text} = props;
@@ -25,7 +26,7 @@ const styles = StyleSheet.create({
         height: 100,
         width: 200,
         backgroundColor: '#fff',
-        borderColor: '#14067d',
+        borderColor: UWheatherTheme.colors.secondary,
         borderWidth: 2,
         borderRadius: 10,
     },
@@ -35,7 +36,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     text:{
-        color: '#14067d',
+        color: UWheatherTheme.colors.secondary,
         textTransform: 'uppercase',
         marginTop: 10,
     },
