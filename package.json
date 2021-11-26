@@ -8,6 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
+
     "@react-native-community/picker": "^1.8.1",
     "@react-navigation/bottom-tabs": "^6.0.9",
     "@react-navigation/native": "^6.0.6",
@@ -26,7 +27,6 @@
     "react-native-easy-toast": "^2.0.0",
     "react-native-elements": "^3.4.2",
     "react-native-gesture-handler": "^1.10.3",
-    "react-native-google-places-autocomplete": "^2.4.1",
     "react-native-keyboard-aware-scroll-view": "^0.9.5",
     "react-native-maps": "0.28.0",
     "react-native-paper": "^4.10.0",

@@ -8,11 +8,13 @@ import { UWheatherTheme } from "../../constants/theme";
 
 
 
+
 export default function Weather() {
     const [pin, setPin] = useState({
         latitude: 37.78825,
         longitude: -122.4324,
     })
+
    const navigation = useNavigation();
     
     const onSubmit = () => {
@@ -26,7 +28,6 @@ export default function Weather() {
                 buttonStyle={styles.btnLogin}
                 onPress={ onSubmit}
              />
-
             <MapView style={styles.map}
             initialRegion={{
                 latitude: 37.78825,
@@ -65,7 +66,6 @@ function Search(){
             onPress={() => navigation.navigate('searchcity')}
             >Click para buscar clima en diferentes ciudades
             </Text>
-
     );
 }
 
@@ -75,6 +75,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'flex-start',
         justifyContent: 'flex-start',
+
     },
     map: {
         width: Dimensions.get('window').width,

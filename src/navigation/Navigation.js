@@ -30,6 +30,7 @@ export default function Navigation() {
                         headerShown: false,
                         tabBarInactiveTintColor: "#686868",
                         tabBarActiveTintColor: "#219EBC"}
+
                 }/>
                 <Tab.Screen 
                     name = "weather" 
@@ -39,6 +40,7 @@ export default function Navigation() {
                         headerShown: false,
                         tabBarInactiveTintColor: "#686868",
                         tabBarActiveTintColor: "#219EBC"
+
                     }
                 }/>
                 <Tab.Screen 
@@ -49,6 +51,7 @@ export default function Navigation() {
                         headerShown: false,
                         tabBarInactiveTintColor: "#686868",
                         tabBarActiveTintColor: "#219EBC"
+
                     }
                 }/>
             </Tab.Navigator>

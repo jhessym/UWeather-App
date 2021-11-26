@@ -13,5 +13,6 @@ export const UWheatherTheme = {
     text: "#023047",
     divider: "#060a5c",
     cold: '#C8CCCE',
+
   }
 }
