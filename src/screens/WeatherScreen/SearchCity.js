@@ -24,7 +24,7 @@ export default function SearchCity() {
                  const respuesta = await fetch(url);
                  const resultado = await respuesta.json();
                  guardarResultado(resultado);
-                 console.log(resultado);
+                 //console.log(resultado);
                  guardarConsultar(false);
 
                  //Modifica los colores de fondo basado en la temperatura
@@ -43,7 +43,6 @@ export default function SearchCity() {
                 
              }catch (error) {
                  mostrarAlerta();
-                 console.log(error);
               }
             }
         }
