@@ -11,6 +11,8 @@ export const UWheatherTheme = {
     secondary: "#00496C",
     surface: "#FB8500",
     text: "#023047",
-    divider: "#060a5c"
+    divider: "#060a5c",
+    cold: '#C8CCCE',
+
   }
 }
