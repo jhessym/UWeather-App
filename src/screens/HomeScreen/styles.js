@@ -32,5 +32,14 @@ export default StyleSheet.create({
     description: {
         fontSize: 18,
         textAlign: "center"
+    },
+    coontainerTextButton: {
+        marginTop: 25
+    },
+    textButton: {
+        fontSize: 16,
+        textAlign: "center",
+        fontWeight: "bold",
+        color: UWheatherTheme.colors.secondary
     }
 })

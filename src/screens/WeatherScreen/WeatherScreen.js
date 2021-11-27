@@ -5,10 +5,6 @@ import { useNavigation } from '@react-navigation/native';
 import { Button } from "react-native-elements";
 import { UWheatherTheme } from "../../constants/theme";
 
-
-
-
-
 export default function Weather() {
     const [pin, setPin] = useState({
         latitude: 37.78825,
