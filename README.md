@@ -1,6 +1,6 @@
 # UWeather-App
 
-This project was made with expo
+This project was made with expo for Android and iOS devices.
 
 You have to do the setup on the development environment: https://reactnative.dev/docs/environment-setup
 
